@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    @extend %font-secondary;
+    font-size: 1.8rem;
+    color: $color-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    @include font($size: 4.4rem, $weight: 500, $height: 5rem);
+    color: $color-secondary;
+}

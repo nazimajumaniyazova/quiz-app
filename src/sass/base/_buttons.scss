@@ -1,0 +1,27 @@
+.button {
+    @extend %font-primary;
+    @include font($size: inherit, $weight: 500, $height: 2.1rem);
+    padding: 8px 25px;
+    color: $color-primary;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    &_bordered {
+        border: 1px solid $color-primary;
+    }
+    &_colored {
+        background: linear-gradient(95.34deg, #FCC822 0%, #FFCD2E 100%);
+        box-shadow: 0px 10.4502px 23.2228px -6.96683px #FBE18F;
+        color: $color-light;
+    }
+    &_wide {
+        padding: 10px 25px;
+    }
+}
+
+.link-button {
+    color: $color-primary;
+    >span:nth-child(1) {
+        margin-right: 5px;
+    }
+}

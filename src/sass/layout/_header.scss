@@ -1,0 +1,27 @@
+.header {
+    padding: 29px 17px;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid $color-header-border;
+}
+
+.header__navigation {
+    margin-left: auto;
+}
+
+//navigation block
+.navigation {
+    display: flex;
+    gap: 23px;
+}
+
+.navigation__link {
+    @extend %font-secondary;
+    color: $color-header-text;
+}

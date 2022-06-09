@@ -1,0 +1,44 @@
+.promo {
+    padding-top: 30px;
+    position: relative;
+}
+
+.promo__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.promo__content {}
+
+.promo__title {
+    margin-bottom: 34px;
+}
+
+.promo__text {
+    @include font($size: 1.7rem, $weight: 400, $height: 1.6rem);
+    margin-bottom: 34px;
+    border-left: 1px solid $color-secondary;
+    padding: 5px 0px 5px 11px;
+}
+
+.promo__buttons {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.promo__img {
+    >img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+//decor
+.promo__decor {
+    position: absolute;
+    bottom: -12%;
+    left: 0%;
+}
