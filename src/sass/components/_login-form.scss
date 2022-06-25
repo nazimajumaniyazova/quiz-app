@@ -1,0 +1,99 @@
+.form-login {}
+
+.form-inputs {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-login__input {
+    width: 100%;
+    border: 1px solid #C1BBBB;
+    background-color: $color-light;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 23px;
+    padding-bottom: 8px;
+    border-bottom: none;
+    color: $color-primary;
+    outline: none;
+    &:focus {
+        border-left: 3px solid $color-primary;
+    }
+}
+
+.form-login__password {
+    width: 100%;
+    border: 1px solid #C1BBBB;
+    background-color: $color-light;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 23px;
+    padding-bottom: 8px;
+    color: $color-primary;
+    outline: none;
+    &:focus {
+        border-left: 3px solid $color-primary;
+    }
+}
+
+.form-login__input-label {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    @include font($size: 1.2rem, $height: 1.2rem, $weight: 400);
+}
+
+.form-login__password-label {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    @include font($size: 1.2rem, $height: 1.2rem, $weight: 400);
+}
+
+.checkbox__label {
+    @include font($size: 1.3rem, $height: 1.2rem, $weight: 400);
+}
+
+.error-message {}
+
+.form__text {
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.form__text-remember {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    >:nth-child(n) {
+        cursor: pointer;
+    }
+}
+
+.form__text-forgot {
+    margin-left: auto;
+    cursor: pointer;
+    >p {
+        @include font($size: 1.3rem, $height: 1.2rem, $weight: 400);
+    }
+}
+
+.form__buttons {
+    display: flex;
+    gap: 29px;
+    >.button {
+        padding: 10px 20px;
+        @include font($size: 1.5rem, $height: 1.7rem, $weight: 500);
+    }
+    >.button:nth-child(2) {
+        padding: 10px 15px;
+    }
+}
+
+.input-error {
+    border: 1px solid red;
+}

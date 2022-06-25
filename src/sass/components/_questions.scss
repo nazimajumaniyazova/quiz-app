@@ -1,0 +1,108 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.questions__steps {
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    position: relative;
+    @include font($size: 1.4rem, $height: 104%, $weight: 500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 5px solid $color-bg;
+    border-radius: 50%;
+    color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(209, 209, 209, 0.3);
+    z-index: 20;
+    margin-bottom: 25px;
+    &:not(:last-child()) {
+        margin-right: 80px;
+    }
+    &_active {
+        border-color: $color-primary;
+        background-color: $color-light;
+    }
+    &:not(:last-child())::after {
+        content: '';
+        height: 4px;
+        width: 300%;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        background-color: $color-bg;
+        z-index: 1;
+    }
+    &_active:not(:last-child())::after {
+        background-color: $color-primary;
+    }
+}
+
+.questions__text {}
+
+.question__desc {
+    padding: 52px 10px 43px 10px;
+    @include font($size: 2.8rem, $weight: 400, $height: 140%);
+    background-color: $color-primary;
+    color: $color-light;
+    margin-bottom: 33px;
+}
+
+.question__answers {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20vh;
+}
+
+.question__answer {
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    @include font($size: 2.1rem, $weight: 600, $height: 85.6%);
+    text-transform: uppercase;
+    padding: 33px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    background-color: $color-bg;
+    &:not(:last-child()) {
+        margin-right: 46px;
+    }
+    &_selected {
+        background-color: $color-primary;
+        color: $color-light;
+    }
+}
+
+.question__answer-badge {
+    @include font($size: 1.3rem, $weight: 400, $height: 140%);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.questions__bottom {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    >.button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    >.button-next {
+        margin-left: auto;
+    }
+}
+
+.icon {}
+
+.timer {}

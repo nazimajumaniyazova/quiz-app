@@ -1,0 +1,20 @@
+.logo {
+    display: flex;
+}
+
+.logo-path1,
+.logo-path2 {
+    transition: all 0.3s ease;
+}
+
+.logo-svg:hover {
+    cursor: pointer;
+    &:hover {
+        .logo-path1 {
+            fill: $color-primary;
+        }
+        .logo-path2 {
+            fill: $color-dark;
+        }
+    }
+}
