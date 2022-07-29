@@ -63,8 +63,17 @@
     margin-bottom: 47px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
-
+.form-error{
+    flex-basis: 100%;
+    @include font($size: 1.5rem, $height: 1.2rem, $weight: 400);
+    margin-bottom: 15px;
+    >p{
+        margin-bottom: 10px;
+        color: red;
+    }
+}
 .form__text-remember {
     display: flex;
     align-items: center;

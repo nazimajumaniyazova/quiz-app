@@ -58,4 +58,8 @@
 .navigation__link {
     @extend %font-secondary;
     color: $color-header-text;
+    transition: all 0.3s ease;
+    &:hover{
+        color: $color-text;
+    }
 }

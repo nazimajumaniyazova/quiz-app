@@ -1,10 +1,20 @@
 .logo {
-    display: flex;
+    position: relative;
+    display: inline-flex;
+}
+.logo::after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    z-index: -1;
 }
 
 .logo-path1,
 .logo-path2 {
-    transition: all 0.3s ease;
+    transition: all .5s ease;
 }
 
 .logo-svg:hover {

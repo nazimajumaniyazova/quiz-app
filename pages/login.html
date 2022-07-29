@@ -13,12 +13,14 @@
     <section class="login">
         <div class="container login__wrapper">
             <div class="login__content">
-                <a href="./../index.html" class="logo login__logo">
-                    <img class="logo__img" src="./../src/img/logo.svg" alt="Quiz Gard logo">
+                <a href="#" class="logo">
+                    <object class="logo-object login__logo" data="./../src/img/logo.svg" type="image/svg+xml" alt="Quiz Gard logo">
+                            Your browser does not support SVG
+                    </object>
                 </a>
                 <div class="login__text">
                     <p>Welcome back!</p>
-                    <p> Please login/Signup to your account.</p>
+                    <p> Please login/signup to start the quiz</p>
                 </div>
                 <form class="login__form form-login">
                     <div class="form-inputs">
@@ -34,6 +36,8 @@
                         </div>
                     </div>
                     <div class="form__text">
+                        <div class="form-error">
+                        </div>
                         <div class="form__text-remember">
                             <input type="checkbox" class="form-login__checkbox" id="privacy_check">
                             <label class="checkbox__label" for="privacy_check">Remember Me</label>
@@ -47,7 +51,6 @@
                         <button class="button button_colored" type="submit">Login</button>
                         <button class="button button_bordered button_shadow">Signup</button>
                     </div>
-
                 </form>
             </div>
 
