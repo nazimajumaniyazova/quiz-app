@@ -1,0 +1,55 @@
+.modal__title {
+    margin-bottom: 20px;
+}
+
+.modal__text {
+    margin-bottom: 27px;
+    @include font($size: 1.5rem, $weight: 400, $height: 1.8rem);
+}
+
+.modal {
+    position: relative;
+    background-color: $color-light;
+    width: 675px;
+    min-height: 120px;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.main-page__overlay{
+    top:100%;
+}
+.modal__close-button {
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    cursor: pointer;
+    svg {
+        pointer-events: none;
+    }
+}
+
+.modal__content {
+    padding: 24px 33px 26px;
+}
+.modal__close-icon {
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    cursor: pointer;
+    svg {
+        pointer-events: none;
+    }
+}

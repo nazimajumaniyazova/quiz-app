@@ -1,0 +1,30 @@
+.logo {
+    position: relative;
+    display: inline-flex;
+}
+.logo::after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    z-index: -1;
+}
+
+.logo-path1,
+.logo-path2 {
+    transition: all .5s ease;
+}
+
+.logo-svg:hover {
+    cursor: pointer;
+    &:hover {
+        .logo-path1 {
+            fill: $color-primary;
+        }
+        .logo-path2 {
+            fill: $color-dark;
+        }
+    }
+}

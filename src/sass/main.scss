@@ -1,0 +1,25 @@
+//base
+@import "./base/reset";
+//abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./components/container";
+//base
+@import "./base/typography";
+@import "./base/global";
+@import "./base/buttons";
+@import "./base/icons";
+@import "./base/decor";
+@import "./base/logo";
+@import "./base/hamburger";
+//layouts
+@import "./layout/header";
+//components
+@import "./components/promo";
+@import "./components/login-form";
+@import "./components/login-section";
+@import "./components/modal";
+@import "./components/questions";
+@import "./components/per-start";
+@import "./components/score-modal.scss"

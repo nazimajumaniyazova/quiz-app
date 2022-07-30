@@ -1,0 +1,36 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon_play {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-image: url('./../img/ico-play.svg');
+}
+
+.icon_timer {
+    width: 49px;
+    height: 49px;
+    background-image: url('./../img/icon-timer.svg');
+    background-repeat: no-repeat;
+}
+
+.icon-left {
+    width: 8px;
+    height: 8px;
+    background-image: url('./../img/icon-left.svg');
+}
+
+.icon-right {
+    width: 8px;
+    height: 8px;
+    background-image: url('./../img/icon-right.svg');
+}
+
+.icon-skip {
+    width: 12px;
+    height: 8px;
+    background-image: url('./../img/icon-skip.svg');
+}

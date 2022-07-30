@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/sass/main.css">
+    <title>QuizGard | by NJ</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <a href="#" class="logo">
+                <object class="logo-object" data="./src/img/logo.svg" type="image/svg+xml" alt="Quiz Gard logo">
+                        Your browser does not support SVG
+                </object>
+            </a>
+
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">How it works?</a></li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Features</a></li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">About us</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a class="button button_bordered" href="./pages/login.html">Login</a>
+                <!-- <button class="button button_colored">Sign Up</button> -->
+            </div>
+            <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container promo__wrapper">
+            <div class="promo__content">
+                <h1 class="promo__title">Learn <br> new concepts<br> for each question</h1>
+                <p class="promo__text">We help you prepare for exams and quizes</p>
+                <div class="promo__buttons">
+                    <a class="button button_colored button_wide" href="./pages/login.html">Sign Up</a>
+                    <a href="#" class="link-button">
+                        <span class="icon_play"></span>
+                        <span class="link-button__text">know more</span>
+                    </a>
+                </div>
+            </div>
+            <div class="promo__img">
+                <img src="./src/img/promo-1.svg" alt="">
+            </div>
+        </div>
+        <div class="promo__decor decor-promo"></div>
+    </section>
+    <div class="overlay main-page__overlay">
+        <div class="modal">
+            <div class="modal__content">
+                <h3 class="modal__title">The Modal Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aliquid a architecto totam maiores asperiores, dolores dignissimos in unde consequatur ad! Sapiente vero nam corrupti.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/main-page-modal.js" type="module"></script>
+    <script src="./src/js/navigation.js" type="module"></script>
+</body>
+
+</html>

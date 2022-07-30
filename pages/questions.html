@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../src/sass/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <a href="./index.html" class="logo">
+                <img src="./../src/img/logo.svg" alt="Quiz Gard logo">
+            </a>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">How it works?</a></li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Features</a></li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">About us</a></li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="questions">
+                <div class="questions__steps">
+                        <div class="step__progress active-progress"></div>
+                        <div class="step step_active">1</div>
+                        <div class="step">2</div>
+                        <div class="step">3</div>
+                        <div class="step">4</div>
+                        <div class="step">5</div>
+                </div>
+                <div class="questions__text question">
+                    <p class="question__desc">An interface design application that runs in the browser with team-based collaborative design projects</p>
+                    <ul class="question__answers">
+                        <!-- <li class="question__answer">
+                            <span class="question__answer-badge question__answer-a">A.</span> figma
+                        </li>
+                        <li class="question__answer">
+                            <span class="question__answer-badge question__answer-b">B.</span> adobe xd
+                        </li>
+                        <li class="question__answer">
+                            <span class="question__answer-badge question__answer-c">C.</span> invision
+                        </li>
+                        <li class="question__answer">
+                            <span class="question__answer-badge question__answer-d">D.</span> sketch
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="questions__bottom">
+                    <button class="button button_inactive button-prev">
+                        <span class="icon icon-left"></span>Previous
+                    </button>
+                    <div class="timer">
+                        <span class="icon icon_timer"></span>
+                        <span class="time">60</span>
+                    </div>
+                    <div class="questions__bottom-block">
+                        <button class="button button_colored button-next">Next
+                            <span class="icon icon-right"></span>
+                        </button>
+                        <button class="button button-skip">
+                            Skip
+                            <span class="icon icon-skip"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script  type="module" src="./../src/js/questions.js"></script>
+
+</body>
+
+</html>

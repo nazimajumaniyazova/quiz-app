@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../src/sass/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="login">
+        <div class="container login__wrapper">
+            <div class="login__content">
+                <a href="#" class="logo">
+                    <object class="logo-object login__logo" data="./../src/img/logo.svg" type="image/svg+xml" alt="Quiz Gard logo">
+                            Your browser does not support SVG
+                    </object>
+                </a>
+                <div class="login__text">
+                    <p>Welcome back!</p>
+                    <p> Please login/signup to start the quiz</p>
+                </div>
+                <form class="login__form form-login">
+                    <div class="form-inputs">
+                        <div class="form-input">
+                            <label for="username" class="form-login__input-label">Email Address</label>
+                            <input type="text" id="username" class="form-login__input">
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-input">
+                            <label for="password" class="form-login__password-label">Password</label>
+                            <input type="password" id="password" class="form-login__password">
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    <div class="form__text">
+                        <div class="form-error">
+                        </div>
+                        <div class="form__text-remember">
+                            <input type="checkbox" class="form-login__checkbox" id="privacy_check">
+                            <label class="checkbox__label" for="privacy_check">Remember Me</label>
+                        </div>
+                        <div class="form__text-forgot">
+                            <p>Forgot Password?</p>
+                        </div>
+
+                    </div>
+                    <div class="form__buttons">
+                        <button class="button button_colored" type="submit">Login</button>
+                        <button class="button button_bordered button_shadow">Signup</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login__img">
+                <img class="login__img-image" src="./../src/img/login-page-img.svg" alt="the login page decor image">
+            </div>
+        </div>
+    </section>
+    <script src="./../src/js/login.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+%hamburger__line {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: $color-dark;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    position: relative;
+    width: 31px;
+    height: 25px;
+    &::before {
+        @extend %hamburger__line;
+        top: 0;
+        left: 0;
+    }
+    &::after {
+        @extend %hamburger__line;
+        bottom: 0;
+        left: 0;
+    }
+    @include media-mobile {
+        display: inline-block;
+    }
+    &.active-hamburger {
+        z-index: 200;
+        &:before {
+            background: $color-light;
+            transform: rotate(45deg);
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+            top: 12px;
+        }
+        &:after {
+            background: $color-light;
+            transform: rotate(-45deg);
+            bottom: 10px;
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+        }
+        & span {
+            transform: scale(0);
+        }
+    }
+}
+
+.hamburger__line {
+    @extend %hamburger__line;
+    top: calc(50% - 1.5px);
+    left: 0;
+}
