@@ -66,7 +66,7 @@ function canStartQuiz() {
     } else {
         startQuizButton.disabled = true;
         startQuizButton.addEventListener('click', ()=>{
-            location.href='./../../pages/questions.html'
+            location.href='../../pages/questions.html'
         })
     }
 }
