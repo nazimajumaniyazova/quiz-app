@@ -73,7 +73,7 @@ function canStartQuiz() {
 
 function loadCategories(){
     let categoriesTagsContainer = document.querySelector('.categories__tags')
-    let categoriesURL = './../../db/categories.json'
+    let categoriesURL = 'https://github.com/nazimajumaniyazova/quiz-app/blob/dev/db/categories.json'
     fetch(categoriesURL)
     .then(response => response.json())
     .then(categories => {
