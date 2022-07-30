@@ -95,7 +95,7 @@ function loadCategories(){
 
 function loadLevels(){
     let levelsTagsContainer = document.querySelector('.levels__tags')
-    let levelsURL = './../../db/levels.json'
+    let levelsURL = 'https://nazimajumaniyazova.github.io/quiz-app/db/levels.json'
     fetch(levelsURL)
     .then(response => response.json())
     .then(levels => {
