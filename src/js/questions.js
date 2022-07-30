@@ -1,6 +1,6 @@
 import { Modal } from './Modal.js';
 
-const QUESTIONS_API_URL ='http://127.0.0.1:5502/db/question.json';
+const QUESTIONS_API_URL ='https://nazimajumaniyazova.github.io/quiz-app/db/question.json';
 //"https://the-trivia-api.com/api/questions?categories=history&limit=5&difficulty=easy";
 
 const stepsList = document.querySelectorAll('.step');
